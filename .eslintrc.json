@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "@casper124578/eslint-config",
+    "@casper124578/eslint-config-react",
+    "@casper124578/eslint-config-next"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "overrides": [
+    {
+      "files": ["./src/pages/api/**/**.ts"],
+      "rules": {
+        "react-hooks/rules-of-hooks": "off",
+        "react-hooks/exhaustive-deps": "off"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.env
+node_modules
+.vscode
+.next
+
+# remove service workers, will be present when running `npm run build`.
+public/*.js
+public/*.map
+public/sitemap.xml
